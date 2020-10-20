@@ -246,8 +246,8 @@ p {
 
 @media only screen and (min-width: 60em) { /* 960px */
   .container {
-    width: 80%;
-    max-width: 90rem;
+    width: 89%;
+    max-width: 96rem;
   }
 }
 
