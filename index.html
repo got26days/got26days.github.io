@@ -80,11 +80,16 @@
 		}
 
 		.bunner {
-			width: 488px;
-			height: 60px;
-			background-color: #e4e4e4;
 			margin-top: 30px;
 			margin-bottom: 30px;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.bunner-item{
+			width: 468px;
+			height: 60px;
+			background-color: #e4e4e4;
 		}
 
 		.result-table td {
@@ -125,6 +130,44 @@
 		tbody tr:nth-child(even) {
 			background-color: #f3f3f3 !important;
 		}
+
+		.name-area {
+			padding-left: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.name-area h1 {
+			color: #fff;
+			font-size: 20px;
+			margin-bottom: 0px;
+
+		}
+
+		.name-area p {
+			font-weight: bold;
+			color: #f90;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 13px;
+		}
+
+		.nav .container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.nav .nav-left {
+			display: flex;
+			justify-content: space-between;
+		}
+		.nav .nav-right {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-right: 20px;;
+		}
 	</style>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
@@ -132,14 +175,31 @@
 <body>
 	<div class="nav">
 		<div class="container">
-			<div class="logo-area">
-				<img src="logo.jpeg" alt="logo" height="98">
-			</div>
+<div class="nav-left">
+	<div class="logo-area">
+		<img src="logo.jpeg" alt="logo" height="98">
+	</div>
+	<div class="name-area">
+		<h1>Ежедневный инсайдерский отчет</h1>
+		<p>Раскрытие информации от: 10/15/2020</p>
+	</div>
+</div>
+<div class="nav-right">
+	<a href="#" target="_blank">
+		<img src="telegram.svg" alt="telegram" width="50">
+	</a>
+
+</div>
 		</div>
 	</div>
 	<div class="container area-buy">
 		<div class="bunner">
+			<div class="bunner-item">
 
+			</div>
+			<div class="bunner-item">
+
+			</div>
 		</div>
 		<div class="area-green"><b>Buyers :18 </b></div>
 
@@ -361,7 +421,12 @@
 
 	<div class="container area-sell">
 		<div class="bunner">
+			<div class="bunner-item">
 
+			</div>
+			<div class="bunner-item">
+
+			</div>
 		</div>
 		<div class="area-red">
 			<b>Sellers : 117 </b>
@@ -1671,7 +1736,12 @@
 			</tbody>
 		</table>
 		<div class="bunner">
+			<div class="bunner-item">
 
+			</div>
+			<div class="bunner-item">
+
+			</div>
 		</div>
 	</div>
 </body>
