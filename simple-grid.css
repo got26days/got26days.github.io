@@ -11,7 +11,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  min-width: 1400px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   left: 0;
@@ -243,7 +243,7 @@ p {
     display: block;
   }
 }
-@media only screen and (min-width: 90em) { /* 960px */
+@media only screen and (min-width: 140em) { /* 960px */
   .container {
     width: 98%;
     max-width: 90rem;
@@ -252,7 +252,7 @@ p {
 
 @media only screen and (min-width: 60em) { /* 960px */
   .container {
-    width: 98%;
+    width: 100%;
     /* max-width: 96rem; */
   }
 }
