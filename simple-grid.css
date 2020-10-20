@@ -243,17 +243,18 @@ p {
     display: block;
   }
 }
-
-@media only screen and (min-width: 60em) { /* 960px */
-  .container {
-    width: 89%;
-    max-width: 96rem;
-  }
-}
-
 @media only screen and (min-width: 90em) { /* 960px */
   .container {
     width: 85%;
     max-width: 90rem;
   }
 }
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 95%;
+    /* max-width: 96rem; */
+  }
+}
+
+
