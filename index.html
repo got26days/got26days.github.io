@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="simple-grid.css">
+	<style>
+		body {
+			font-family: Roboto;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.header {
+			color: #fff;
+			background-color: #1b1b1b;
+		}
+
+		.area-green {
+			background-color: rgb(222, 241, 225);
+			height: 38px;
+			display: flex;
+			align-items: center;
+			padding-left: 10px;
+			border: 6px solid #7bce7b;
+		}
+
+		.area-red {
+			background-color: rgb(254, 241, 241);
+			height: 38px;
+			display: flex;
+			align-items: center;
+			padding-left: 10px;
+			border: 6px solid #ff7272;
+		}
+
+		.header th {
+			font-weight: 600;
+			font-size: 17px;
+			padding: 1.3em .75em;
+			color: #fff;
+		}
+
+		.result-table tbody tr td {
+			padding: 0.9em 0.55em;
+			font-weight: 400;
+			font-size: 15px;
+			text-align: center;
+		}
+
+		.result-table tbody tr td:first-child {
+			text-align: left !important;
+		}
+
+		.result-table tbody tr td:first-child b {
+			background-color: #efefef;
+			border: 4px solid #efefef;
+			border-radius: 6px;
+		}
+
+		.border_bottom td {
+			border-bottom: 1px solid #e4e4e4;
+		}
+
+		.nav {
+			height: 120px;
+			background-color: black;
+			margin-bottom: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.area-buy {
+			margin-bottom: 30px;
+		}
+
+		.bunner {
+			width: 488px;
+			height: 60px;
+			background-color: #e4e4e4;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.result-table td {
+			/* border-left: 1px solid #e4e4e4; */
+			border-right: 1px solid #e4e4e4;
+		}
+
+		.result-table td:first-child {
+			border-left: none;
+		}
+
+		.result-table td:last-child {
+			border-right: none;
+		}
+
+		.result-table th {
+			/* border-left: 1px solid #5d5d5d; */
+			border-right: 1px solid #6f6f6f;
+		}
+
+		.result-table th:first-child {
+			border-left: none;
+		}
+
+		.result-table th:last-child {
+			border-right: none;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="nav">
+		<div class="container">
+			<div class="logo-area">
+				<img src="logo.jpeg" alt="logo" height="98">
+			</div>
+		</div>
+	</div>
+	<div class="container area-buy">
+		<div class="bunner">
+
+		</div>
+		<div class="area-green"><b>Buyers :18 </b></div>
+
+		<table class="result-table" cellspacing="0" cellpadding="0" width="100%">
+			<thead>
+				<tr class="header">
+					<th>Название компании</th>
+					<th>Покупатель</th>
+					<th>Дата сделки</th>
+					<th>Сумма сделки</th>
+					<th>Объём сделки</th>
+					<th>Текущая цена</th>
+					<th>Отчет SEC</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="border_bottom">
+					<td><b>$BTN</b> / Ballantyne Strong, Inc</td>
+					<td>Global Investors Fundamental (Director)</td>
+					<td>10/15/2020</td>
+					<td>$4,588.74</td>
+					<td>2,886 акций по <br /><b> 1.59</b>$</td>
+					<td> $1.53</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/946454/000142050620001070/xslF345X03/doc4_871.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$BIVI</b> / BioVie Inc.</td>
+					<td>Steve Gorlin (Director)</td>
+					<td>10/15/2020</td>
+					<td>$100,600.00</td>
+					<td>10,000 акций по <br /><b> 10.06</b>$</td>
+					<td> $9.55</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1033742/000152013820000492/xslF345X03/ownership.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CALM</b> / Cal-Maine Foods, Inc.</td>
+					<td>Charles Jeff Hardin (VP)</td>
+					<td>10/15/2020</td>
+					<td>$76,560.00</td>
+					<td>2,000 акций по <br /><b> 38.28</b>$</td>
+					<td> $38.17</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/16160/000001616020000102/xslF345X03/wf-form4_160314064738954.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$EFT</b> / Eaton Vance Floating-Rate Income Trust</td>
+					<td>Saba Capital Management, L.P. (Major Shareholder)</td>
+					<td>10/15/2020</td>
+					<td>$335,564.71</td>
+					<td>26,611 акций по <br /><b> 12.61</b>$</td>
+					<td> $12.75</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1288992/000151028120000205/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$FAST</b> / Fastenal</td>
+					<td>Hsenghung Sam Hsu (Director)</td>
+					<td>10/19/2020</td>
+					<td>$89,500.00</td>
+					<td>2,000 акций по <br /><b> 44.75</b>$</td>
+					<td> $44.43</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/815556/000117911020010569/xslF345X03/edgar.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$FAST</b> / Fastenal</td>
+					<td>Hsenghung Sam Hsu (Director)</td>
+					<td>10/16/2020</td>
+					<td>$45,000.00</td>
+					<td>1,000 акций по <br /><b> 45.00</b>$</td>
+					<td> $44.43</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/815556/000117911020010569/xslF345X03/edgar.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$FSDC</b> / FS Development Corp.</td>
+					<td>Fs Development Holdings, Llc (Major Shareholder)</td>
+					<td>8/14/2020</td>
+					<td>$4,415,000.00</td>
+					<td>441,500 акций по <br /><b> 10.00</b>$</td>
+					<td> $10.40</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1581754/000121390020032139/xslF345X03/ownership.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$GABC</b> / German American Bancorp, Inc.</td>
+					<td>Christina M Ryan (Director)</td>
+					<td>10/15/2020</td>
+					<td>$1,740.94</td>
+					<td>61 акций по <br /><b> 28.54</b>$</td>
+					<td> $29.52</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/714395/000141588920002479/xslF345X03/form4-10192020_011032.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$GBDC</b> / Golub Capital BDC Inc</td>
+					<td>Lawrence E Golub (Chairman)</td>
+					<td>10/16/2020</td>
+					<td>$67,100.00</td>
+					<td>5,000 акций по <br /><b> 13.42</b>$</td>
+					<td> $13.20</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1298389/000147676520000156/xslF345X03/wf-form4_160313957575842.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$GP</b> / GreenPower Motor Company Inc.</td>
+					<td>Fraser Atkinson (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$75,050.00</td>
+					<td>5,000 акций по <br /><b> 15.01</b>$</td>
+					<td> $10.92</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1492886/000156761920017969/xslF345X03/doc1.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$NSPR</b> / InspireMD Inc</td>
+					<td>Gary S. Roubin (Director)</td>
+					<td>10/16/2020</td>
+					<td>$100,000.35</td>
+					<td>222,223 акций по <br /><b> 0.45</b>$</td>
+					<td> $0.42</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1162533/000149315220019601/xslF345X03/ownership.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MNR</b> / Monmouth R.E. Inv. Corp.</td>
+					<td>Michael P Landy (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$1,000.10</td>
+					<td>73 акций по <br /><b> 13.70</b>$</td>
+					<td> $14.17</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/67625/000156761920017937/xslF345X03/doc1.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$NTRP</b> / Neurotrope Inc</td>
+					<td>Joshua Silverman (Director)</td>
+					<td>10/15/2020</td>
+					<td>$53,500.00</td>
+					<td>50,000 акций по <br /><b> 1.07</b>$</td>
+					<td> $1.11</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1513856/000110465920115850/xslF345X03/tm2033760d1_4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ODC</b> / Oil-Dri Co. of America</td>
+					<td>Allan H Selig (Director)</td>
+					<td>10/15/2020</td>
+					<td>$36,630.00</td>
+					<td>1,000 акций по <br /><b> 36.63</b>$</td>
+					<td> $36.11</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/74046/000007404620000060/xslF345X03/wf-form4_160314045878138.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$RCG</b> / Renn Fund Inc</td>
+					<td>Murray Stahl (CEO)</td>
+					<td>10/16/2020</td>
+					<td>$924.75</td>
+					<td>675 акций по <br /><b> 1.37</b>$</td>
+					<td> $1.35</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/919567/000120709720000081/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TPL</b> / Texas Pacific Land Trust</td>
+					<td>Kinetics Asset Managem Horizon (Major Shareholder)</td>
+					<td>10/16/2020</td>
+					<td>$6,571.88</td>
+					<td>14 акций по <br /><b> 469.42</b>$</td>
+					<td> $472.00</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/97517/000105682320000165/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TIPT</b> / Tiptree Inc.</td>
+					<td>Michael Gene Barnes (Chairman)</td>
+					<td>10/16/2020</td>
+					<td>$16,023.00</td>
+					<td>3,052 акций по <br /><b> 5.25</b>$</td>
+					<td> $5.21</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1393726/000139372620000256/xslF345X03/wf-form4_160312107175246.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TMP</b> / Tompkins Financial Co.</td>
+					<td>Ita M Rahily (Director)</td>
+					<td>10/16/2020</td>
+					<td>$2,496.15</td>
+					<td>45 акций по <br /><b> 55.47</b>$</td>
+					<td> $55.37</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1005817/000112760220027153/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<div class="container area-sell">
+		<div class="bunner">
+
+		</div>
+		<div class="area-red">
+			<b>Sellers : 117 </b>
+		</div>
+
+		<table class="result-table" cellspacing="0" cellpadding="0" width="100%">
+			<thead>
+
+				<tr class="header header-red">
+					<th>Название компании</th>
+					<th>Продавец</th>
+					<th>Дата сделки</th>
+					<th>Сумма сделки</th>
+					<th>Объём сделки</th>
+					<th>Текущая цена</th>
+					<th>Отчет SEC</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="border_bottom">
+					<td><b>$ONEM</b> / 1life Healthcare Inc</td>
+					<td>David P Kennedy (Director)</td>
+					<td>10/19/2020</td>
+					<td>$84,867.90</td>
+					<td>2,778 акций по <br /><b> 30.55</b>$</td>
+					<td> $30.52</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1404123/000156218020006388/xslF345X03/primarydocument.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$EGHT</b> / 8x8, Inc.</td>
+					<td>Vikram Verma (CEO)</td>
+					<td>10/16/2020</td>
+					<td>$18,210.43</td>
+					<td>1,099 акций по <br /><b> 16.57</b>$</td>
+					<td> $16.48</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1023731/000102373120000159/xslF345X03/wf-form4_160314027961527.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$EGHT</b> / 8x8, Inc.</td>
+					<td>Matthew Zinn (SVP)</td>
+					<td>10/16/2020</td>
+					<td>$1,872.41</td>
+					<td>113 акций по <br /><b> 16.57</b>$</td>
+					<td> $16.48</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1023731/000102373120000157/xslF345X03/wf-form4_160314019357352.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$EGHT</b> / 8x8, Inc.</td>
+					<td>Dejan Deklich (EVP)</td>
+					<td>10/16/2020</td>
+					<td>$3,777.96</td>
+					<td>228 акций по <br /><b> 16.57</b>$</td>
+					<td> $16.48</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1023731/000102373120000155/xslF345X03/wf-form4_160314011577019.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$EGHT</b> / 8x8, Inc.</td>
+					<td>Samuel C Wilson (CFO)</td>
+					<td>10/16/2020</td>
+					<td>$2,700.91</td>
+					<td>163 акций по <br /><b> 16.57</b>$</td>
+					<td> $16.48</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1023731/000102373120000153/xslF345X03/wf-form4_160313984741349.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$EGHT</b> / 8x8, Inc.</td>
+					<td>Bryan R Martin (CTO)</td>
+					<td>10/16/2020</td>
+					<td>$1,574.15</td>
+					<td>95 акций по <br /><b> 16.57</b>$</td>
+					<td> $16.48</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1023731/000102373120000151/xslF345X03/wf-form4_160313972774219.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ACAD</b> / ACADIA Pharmaceuticals Inc.</td>
+					<td>Stephen Davis (CEO)</td>
+					<td>10/16/2020</td>
+					<td>$125,977.60</td>
+					<td>2,960 акций по <br /><b> 42.56</b>$</td>
+					<td> $41.49</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1070494/000120919120055315/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ACAD</b> / ACADIA Pharmaceuticals Inc.</td>
+					<td>Srdjan R Stankovic (President)</td>
+					<td>10/16/2020</td>
+					<td>$55,200.32</td>
+					<td>1,297 акций по <br /><b> 42.56</b>$</td>
+					<td> $41.49</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1070494/000120919120055316/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ACAD</b> / ACADIA Pharmaceuticals Inc.</td>
+					<td>Michael J Yang (EVP)</td>
+					<td>10/16/2020</td>
+					<td>$53,072.32</td>
+					<td>1,247 акций по <br /><b> 42.56</b>$</td>
+					<td> $41.49</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1070494/000120919120055317/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AMD</b> / Advanced Micro Devices, Inc.</td>
+					<td>Mark D Papermaster (EVP)</td>
+					<td>10/15/2020</td>
+					<td>$3,619,310.00</td>
+					<td>43,000 акций по <br /><b> 84.17</b>$</td>
+					<td> $82.00</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/2488/000000248820000156/xslF345X03/wf-form4_160313845316103.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ALTR</b> / Altair Engineering Inc.</td>
+					<td>Jrs Investments Llc (Major Shareholder)</td>
+					<td>10/16/2020</td>
+					<td>$717,867.52</td>
+					<td>15,616 акций по <br /><b> 45.97</b>$</td>
+					<td> $46.25</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1701732/000089924320028635/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ALTR</b> / Altair Engineering Inc.</td>
+					<td>James Ralph Scapa (CEO)</td>
+					<td>10/16/2020</td>
+					<td>$2,136,680.40</td>
+					<td>46,490 акций по <br /><b> 45.96</b>$</td>
+					<td> $46.25</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1701732/000089924320028636/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AYX</b> / Alteryx, Inc.</td>
+					<td>Christopher M. Lal (Insider)</td>
+					<td>10/15/2020</td>
+					<td>$184,803.92</td>
+					<td>1,324 акций по <br /><b> 139.58</b>$</td>
+					<td> $140.38</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1426395/000168992320000091/xslF345X03/wf-form4_160313931645946.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AIMC</b> / Altra Industrial Motion Corp</td>
+					<td>Todd Patriacca (VP)</td>
+					<td>10/16/2020</td>
+					<td>$127,500.00</td>
+					<td>3,000 акций по <br /><b> 42.50</b>$</td>
+					<td> $39.54</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1254044/000120919120055274/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AIMC</b> / Altra Industrial Motion Corp</td>
+					<td>Carl R Christenson (CEO)</td>
+					<td>10/16/2020</td>
+					<td>$1,050,000.00</td>
+					<td>25,000 акций по <br /><b> 42.00</b>$</td>
+					<td> $39.54</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1374535/000120919120055283/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AMED</b> / Amedisys Inc</td>
+					<td>Christopher Gerard (COO)</td>
+					<td>10/15/2020</td>
+					<td>$378,045.00</td>
+					<td>1,500 акций по <br /><b> 252.03</b>$</td>
+					<td> $246.02</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/896262/000089626220000023/xslF345X03/wf-form4_160313790976246.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ANGI</b> / ANGI Homeservices Inc</td>
+					<td>Bowman Angela R Hicks (Director)</td>
+					<td>10/15/2020</td>
+					<td>$110,100.00</td>
+					<td>10,000 акций по <br /><b> 11.01</b>$</td>
+					<td> $10.90</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1534094/000117911020010547/xslF345X03/edgar.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ANTM</b> / Anthem, Inc.</td>
+					<td>Peter D Haytaian (EVP)</td>
+					<td>10/15/2020</td>
+					<td>$1,703,236.30</td>
+					<td>5,834 акций по <br /><b> 291.95</b>$</td>
+					<td> $292.21</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1156039/000115603920000086/xslF345X03/wf-form4_160313949706885.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$APPF</b> / AppFolio Inc</td>
+					<td>William R Rauth III (Director)</td>
+					<td>10/15/2020</td>
+					<td>$4,495,345.66</td>
+					<td>27,911 акций по <br /><b> 161.06</b>$</td>
+					<td> $159.00</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1213191/000089924320028654/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$APPF</b> / AppFolio Inc</td>
+					<td>William R Rauth III (Director)</td>
+					<td>10/19/2020</td>
+					<td>$1,978,880.46</td>
+					<td>12,413 акций по <br /><b> 159.42</b>$</td>
+					<td> $159.00</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1213191/000089924320028654/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AAPL</b> / Apple Inc.</td>
+					<td>Chris Kondo (Insider)</td>
+					<td>10/16/2020</td>
+					<td>$1,800,685.60</td>
+					<td>14,840 акций по <br /><b> 121.34</b>$</td>
+					<td> $115.98</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/320193/000032019320000089/xslF345X03/wf-form4_160314661733333.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AAPL</b> / Apple Inc.</td>
+					<td>Deirdre O'brien (SVP)</td>
+					<td>10/16/2020</td>
+					<td>$3,737,760.00</td>
+					<td>31,200 акций по <br /><b> 119.80</b>$</td>
+					<td> $115.98</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/320193/000032019320000090/xslF345X03/wf-form4_160314673986899.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AAWW</b> / Atlas Air Worldwide Holdings, Inc.</td>
+					<td>Michael Steen (CMO)</td>
+					<td>10/15/2020</td>
+					<td>$866,018.20</td>
+					<td>13,070 акций по <br /><b> 66.26</b>$</td>
+					<td> $64.42</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1135185/000120919120055287/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$BBIO</b> / BridgeBio Pharma</td>
+					<td>Charles J Homcy (Chairman)</td>
+					<td>10/16/2020</td>
+					<td>$420,496.00</td>
+					<td>10,256 акций по <br /><b> 41.00</b>$</td>
+					<td> $39.53</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1192591/000089924320028659/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$BFAM</b> / Bright Horizons Family Solutions Inc.</td>
+					<td>Mary Lou Burke (COO)</td>
+					<td>10/15/2020</td>
+					<td>$56,750.60</td>
+					<td>370 акций по <br /><b> 153.38</b>$</td>
+					<td> $156.06</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1437578/000156218020006383/xslF345X03/primarydocument.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$BAM</b> / Brookfield Asset Management Inc.</td>
+					<td>Ati Investment Parent, Llc (Major Shareholder)</td>
+					<td>10/19/2020</td>
+					<td>$1,047,750,000.00</td>
+					<td>47,625,000 акций по <br /><b> 22.00</b>$</td>
+					<td> $33.69</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/949509/000089924320028604/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CDNS</b> / Cadence Design Systems, Inc.</td>
+					<td>Lip Bu Tan (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$5,782,000.00</td>
+					<td>50,000 акций по <br /><b> 115.64</b>$</td>
+					<td> $113.56</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/813672/000120919120055333/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CDLX</b> / Cardlytics Inc</td>
+					<td>Kirk Somers (Insider)</td>
+					<td>10/16/2020</td>
+					<td>$247,230.00</td>
+					<td>3,000 акций по <br /><b> 82.41</b>$</td>
+					<td> $80.16</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1204015/000166607120000272/xslF345X03/wf-form4_160313968170748.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CDLX</b> / Cardlytics Inc</td>
+					<td>Scott D Grimes (Chairman)</td>
+					<td>10/16/2020</td>
+					<td>$162,100.00</td>
+					<td>2,000 акций по <br /><b> 81.05</b>$</td>
+					<td> $80.16</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1617486/000166607120000271/xslF345X03/wf-form4_160313957722132.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CARG</b> / CarGurus Inc</td>
+					<td>Langley Steinert (CEO)</td>
+					<td>10/16/2020</td>
+					<td>$265,812.84</td>
+					<td>12,006 акций по <br /><b> 22.14</b>$</td>
+					<td> $21.65</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1494259/000112760220027200/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CRNC</b> / Cerence Inc.</td>
+					<td>Mark J Gallenberger (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$83,700.28</td>
+					<td>1,601 акций по <br /><b> 52.28</b>$</td>
+					<td> $57.57</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1185163/000166773120000380/xslF345X03/gallenberger10152020.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CTAS</b> / Cintas Co.</td>
+					<td>J. Michael Hansen (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$23,145,150.00</td>
+					<td>67,000 акций по <br /><b> 345.45</b>$</td>
+					<td> $341.32</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/723254/000156761920017949/xslF345X03/doc1.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CTSH</b> / Cognizant Technology Solutions Co.</td>
+					<td>Robert Telesmanic (SVP)</td>
+					<td>10/15/2020</td>
+					<td>$53,169.42</td>
+					<td>723 акций по <br /><b> 73.54</b>$</td>
+					<td> $72.20</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1058290/000105829020000131/xslF345X03/wf-form4_160313860578694.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CVET</b> / Covetrus Inc</td>
+					<td>Georgina Wraight (Insider)</td>
+					<td>10/15/2020</td>
+					<td>$270,000.00</td>
+					<td>10,000 акций по <br /><b> 27.00</b>$</td>
+					<td> $27.24</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1752836/000175283620000193/xslF345X03/wf-form4_160313806400451.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CFB</b> / CrossFirst Bankshares</td>
+					<td>David L O'toole (CFO)</td>
+					<td>10/14/2020</td>
+					<td>$4,855.00</td>
+					<td>500 акций по <br /><b> 9.71</b>$</td>
+					<td> $9.36</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1458412/000177847820000032/xslF345X03/wf-form4_160313105842305.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$DECK</b> / Deckers Outdoor Corp</td>
+					<td>Thomas Garcia (SVP)</td>
+					<td>10/16/2020</td>
+					<td>$593,208.00</td>
+					<td>2,247 акций по <br /><b> 264.00</b>$</td>
+					<td> $253.00</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/910521/000159396820002075/xslF345X03/primary_01.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$DXCM</b> / DexCom, Inc.</td>
+					<td>Mark G Foletta (Director)</td>
+					<td>10/15/2020</td>
+					<td>$396,820.00</td>
+					<td>1,000 акций по <br /><b> 396.82</b>$</td>
+					<td> $397.50</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1093557/000109355720000284/xslF345X03/edgardoc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$DRNA</b> / Dicerna Pharmaceuticals Inc</td>
+					<td>James B Weissman (COO)</td>
+					<td>10/15/2020</td>
+					<td>$176,144.00</td>
+					<td>8,720 акций по <br /><b> 20.20</b>$</td>
+					<td> $20.05</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1399529/000139952920000072/xslF345X03/wf-form4_160315914206177.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$DLB</b> / Dolby Laboratories, Inc.</td>
+					<td>Steven E. Forshay (SVP)</td>
+					<td>10/16/2020</td>
+					<td>$58,151.73</td>
+					<td>833 акций по <br /><b> 69.81</b>$</td>
+					<td> $67.75</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1308547/000120919120055292/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$EGAN</b> / eGain Corp</td>
+					<td>Eric Smit (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$90,600.00</td>
+					<td>5,000 акций по <br /><b> 18.12</b>$</td>
+					<td> $18.97</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1066194/000110465920116063/xslF345X03/a4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$EA</b> / Electronic Arts Inc.</td>
+					<td>Jacob J Schatz (General Counsel)</td>
+					<td>10/16/2020</td>
+					<td>$132,770.00</td>
+					<td>1,000 акций по <br /><b> 132.77</b>$</td>
+					<td> $129.87</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/712515/000112760220027221/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$XGN</b> / Exagen Inc.</td>
+					<td>James L L Tullis (Director)</td>
+					<td>10/19/2020</td>
+					<td>$101,586.30</td>
+					<td>6,618 акций по <br /><b> 15.35</b>$</td>
+					<td> $15.10</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1230641/000120919120055322/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$XGN</b> / Exagen Inc.</td>
+					<td>James L L Tullis (Director)</td>
+					<td>10/15/2020</td>
+					<td>$64,222.08</td>
+					<td>4,316 акций по <br /><b> 14.88</b>$</td>
+					<td> $15.10</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1230641/000120919120055322/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$FICO</b> / Fair Isaac Co.</td>
+					<td>James M Wehmann (EVP)</td>
+					<td>10/15/2020</td>
+					<td>$2,164,150.00</td>
+					<td>5,000 акций по <br /><b> 432.83</b>$</td>
+					<td> $432.43</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/814547/000121465920008722/xslF345X03/marketforms-49412.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$FSLY</b> / Fastly, Inc.</td>
+					<td>Adriel G Lares (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$362,600.00</td>
+					<td>4,000 акций по <br /><b> 90.65</b>$</td>
+					<td> $83.50</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1416050/000151741320000240/xslF345X03/wf-form4_160314291076711.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$AGM</b> / Federal Agricultural Mortgage Corp.</td>
+					<td>Bancorporation National Zions (Major Shareholder)</td>
+					<td>10/19/2020</td>
+					<td>$490,563.78</td>
+					<td>7,086 акций по <br /><b> 69.23</b>$</td>
+					<td> $68.69</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/109380/000010938020000237/xslF345X03/wf-form4_160315251562368.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$FDX</b> / FedEx Co.</td>
+					<td>Jill Brannon (EVP)</td>
+					<td>10/19/2020</td>
+					<td>$1,100,550.00</td>
+					<td>3,795 акций по <br /><b> 290.00</b>$</td>
+					<td> $281.97</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1048911/000112760220027216/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$GRTX</b> / Galera Therapeutics</td>
+					<td>Holdings A/S Novo (Major Shareholder)</td>
+					<td>10/15/2020</td>
+					<td>$4,950,000.00</td>
+					<td>450,000 акций по <br /><b> 11.00</b>$</td>
+					<td> $11.51</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1388325/000120919120055281/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$GTE</b> / Gran Tierra Energy Inc.</td>
+					<td>Gmt Capital Corp (Major Shareholder)</td>
+					<td>10/16/2020</td>
+					<td>$105,000.00</td>
+					<td>500,000 акций по <br /><b> 0.21</b>$</td>
+					<td> $0.22</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/899037/000110619120000022/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$GRUB</b> / GrubHub Inc</td>
+					<td>Matthew M Maloney (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$80,650.00</td>
+					<td>1,000 акций по <br /><b> 80.65</b>$</td>
+					<td> $83.22</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1556458/000120919120055314/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$FUL</b> / H.B. Fuller</td>
+					<td>Timothy J Keenan (VP)</td>
+					<td>10/16/2020</td>
+					<td>$363,244.98</td>
+					<td>7,278 акций по <br /><b> 49.91</b>$</td>
+					<td> $48.72</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/39368/000122520820012557/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$HMN</b> / Horace Mann Educators Co.</td>
+					<td>Matthew P. Sharpe (EVP)</td>
+					<td>10/15/2020</td>
+					<td>$119,175.00</td>
+					<td>3,500 акций по <br /><b> 34.05</b>$</td>
+					<td> $35.14</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/850141/000121465920008713/xslF345X03/marketforms-49863.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TWNK</b> / Hostess Brands Inc</td>
+					<td>Hostess Cdm Co-Invest, Llc (Insider)</td>
+					<td>10/16/2020</td>
+					<td>$3,501,491.49</td>
+					<td>264,663 акций по <br /><b> 13.23</b>$</td>
+					<td> $13.22</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1644406/000089924320028657/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TWNK</b> / Hostess Brands Inc</td>
+					<td>Hostess Cdm Co-Invest, Llc (Insider)</td>
+					<td>10/19/2020</td>
+					<td>$2,841,286.60</td>
+					<td>212,990 акций по <br /><b> 13.34</b>$</td>
+					<td> $13.22</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1644406/000089924320028657/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$IDT</b> / IDT Co.</td>
+					<td>Nadine Shea (EVP)</td>
+					<td>10/15/2020</td>
+					<td>$11,880.00</td>
+					<td>1,080 акций по <br /><b> 11.00</b>$</td>
+					<td> $10.25</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1005731/000120919120055331/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$SNEX</b> / INTL FCStone</td>
+					<td>John Radziwill (Chairman)</td>
+					<td>10/16/2020</td>
+					<td>$244,286.68</td>
+					<td>4,444 акций по <br /><b> 54.97</b>$</td>
+					<td> $55.78</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/913760/000091376020000166/xslF345X03/wf-form4_160314122258630.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$KLIC</b> / Kulicke and Soffa Industries, Inc.</td>
+					<td>Nelson Munpun Wong (SVP)</td>
+					<td>10/15/2020</td>
+					<td>$132,350.00</td>
+					<td>5,000 акций по <br /><b> 26.47</b>$</td>
+					<td> $27.01</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/56978/000005697820000130/xslF345X03/wf-form4_160310628438507.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$KLIC</b> / Kulicke and Soffa Industries, Inc.</td>
+					<td>Nelson Munpun Wong (SVP)</td>
+					<td>10/15/2020</td>
+					<td>$132,350.00</td>
+					<td>5,000 акций по <br /><b> 26.47</b>$</td>
+					<td> $27.01</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/56978/000005697820000130/xslF345X03/wf-form4_160310628438507.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$LGC</b> / Leisure Acquisition Corp.</td>
+					<td>Glazer Capital, Llc (Major Shareholder)</td>
+					<td>10/15/2020</td>
+					<td>$833,112.00</td>
+					<td>79,800 акций по <br /><b> 10.44</b>$</td>
+					<td> $10.44</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1076809/000107680920000192/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$LGC</b> / Leisure Acquisition Corp.</td>
+					<td>Glazer Capital, Llc (Major Shareholder)</td>
+					<td>10/19/2020</td>
+					<td>$30,294.55</td>
+					<td>2,899 акций по <br /><b> 10.45</b>$</td>
+					<td> $10.44</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1076809/000107680920000192/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MTSI</b> / MACOM Technology Solutions Holdings Inc</td>
+					<td>Douglas J Carlson (SVP)</td>
+					<td>10/15/2020</td>
+					<td>$140,304.00</td>
+					<td>3,950 акций по <br /><b> 35.52</b>$</td>
+					<td> $37.19</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1493594/000090445420000663/xslF345X03/edgar.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MX</b> / MagnaChip Semiconductor Co.</td>
+					<td>Brigade Leveraged Capital Stru (Major Shareholder)</td>
+					<td>10/15/2020</td>
+					<td>$868,000.00</td>
+					<td>62,000 акций по <br /><b> 14.00</b>$</td>
+					<td> $13.93</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1325702/000091957420006429/xslF345X03/ownership.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MRVL</b> / Marvell Technology Group Ltd.</td>
+					<td>Matthew J Murphy (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$321,225.00</td>
+					<td>7,500 акций по <br /><b> 42.83</b>$</td>
+					<td> $41.85</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1058057/000120919120055327/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MRVL</b> / Marvell Technology Group Ltd.</td>
+					<td>Matthew J Murphy (CEO)</td>
+					<td>9/15/2020</td>
+					<td>$293,550.00</td>
+					<td>7,500 акций по <br /><b> 39.14</b>$</td>
+					<td> $41.85</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1058057/000120919120055327/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MA</b> / Mastercard Incorporated</td>
+					<td>Foundation Mastercard (Major Shareholder)</td>
+					<td>10/15/2020</td>
+					<td>$10,109,386.00</td>
+					<td>30,100 акций по <br /><b> 335.86</b>$</td>
+					<td> $331.67</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1141391/000089534520001031/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MA</b> / Mastercard Incorporated</td>
+					<td>Foundation Mastercard (Major Shareholder)</td>
+					<td>10/19/2020</td>
+					<td>$10,136,175.00</td>
+					<td>30,100 акций по <br /><b> 336.75</b>$</td>
+					<td> $331.67</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1141391/000089534520001031/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MTCH</b> / Match Group, Inc.</td>
+					<td>Glenn Schiffman (Director)</td>
+					<td>10/15/2020</td>
+					<td>$2,808,733.66</td>
+					<td>25,918 акций по <br /><b> 108.37</b>$</td>
+					<td> $113.00</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/891103/000089110320000031/xslF345X03/wf-form4_160314573392583.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$MIME</b> / Mimecast Ltd</td>
+					<td>Alex E.T. Bender (SVP)</td>
+					<td>10/16/2020</td>
+					<td>$161,490.00</td>
+					<td>3,500 акций по <br /><b> 46.14</b>$</td>
+					<td> $44.68</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1644675/000120919120055285/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$LASR</b> / nLIGHT, Inc.</td>
+					<td>Scott H. Keeney (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$113,400.00</td>
+					<td>5,000 акций по <br /><b> 22.68</b>$</td>
+					<td> $23.44</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1124796/000112479620000137/xslF345X03/wf-form4_160313702234718.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$NUS</b> / Nu Skin Enterprises, Inc.</td>
+					<td>Ryan S Napierski (President)</td>
+					<td>10/15/2020</td>
+					<td>$381,710.00</td>
+					<td>7,000 акций по <br /><b> 54.53</b>$</td>
+					<td> $53.92</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1021561/000102156120000067/xslF345X03/edgar.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$NVDA</b> / NVIDIA Co.</td>
+					<td>Debora Shoquist (EVP)</td>
+					<td>10/15/2020</td>
+					<td>$9,286,426.44</td>
+					<td>16,686 акций по <br /><b> 556.54</b>$</td>
+					<td> $539.91</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1045810/000104581020000175/xslF345X03/wf-form4_160314077908181.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$OKTA</b> / Okta Inc</td>
+					<td>Christopher K Kramer (CAO)</td>
+					<td>10/15/2020</td>
+					<td>$223,200.30</td>
+					<td>939 акций по <br /><b> 237.70</b>$</td>
+					<td> $242.09</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1660134/000120919120055293/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ON</b> / ON Semiconductor Co.</td>
+					<td>Keith D Jackson (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$15,456,000.00</td>
+					<td>600,000 акций по <br /><b> 25.76</b>$</td>
+					<td> $26.21</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1097864/000122520820012592/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PD</b> / Pagerduty Inc</td>
+					<td>Dan Alexandru Solomon (Insider)</td>
+					<td>10/16/2020</td>
+					<td>$1,371,561.48</td>
+					<td>45,132 акций по <br /><b> 30.39</b>$</td>
+					<td> $30.75</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1568100/000156218020006385/xslF345X03/primarydocument.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PD</b> / Pagerduty Inc</td>
+					<td>Howard Wilson (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$1,062,950.00</td>
+					<td>35,000 акций по <br /><b> 30.37</b>$</td>
+					<td> $30.75</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1568100/000156218020006386/xslF345X03/primarydocument.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PAYX</b> / Paychex, Inc.</td>
+					<td>Efrain Rivera (CFO)</td>
+					<td>10/16/2020</td>
+					<td>$18,152,002.96</td>
+					<td>216,818 акций по <br /><b> 83.72</b>$</td>
+					<td> $81.93</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/723531/000120919120055253/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PAYC</b> / Paycom Software, Inc.</td>
+					<td>Craig E. Boelte (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$2,980,400.00</td>
+					<td>8,000 акций по <br /><b> 372.55</b>$</td>
+					<td> $383.12</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1590955/000089924320028611/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PAICU</b> / Petra Acquisition, Inc.</td>
+					<td>Glazer Capital, Llc (Major Shareholder)</td>
+					<td>10/9/2020</td>
+					<td>$93,280.00</td>
+					<td>9,328 акций по <br /><b> 10.00</b>$</td>
+					<td> $9.98</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1076809/000107680920000191/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PAICU</b> / Petra Acquisition, Inc.</td>
+					<td>Glazer Capital, Llc (Major Shareholder)</td>
+					<td>10/12/2020</td>
+					<td>$200.00</td>
+					<td>20 акций по <br /><b> 10.00</b>$</td>
+					<td> $9.98</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1076809/000107680920000191/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PNRG</b> / Primeenergy Resources Corp</td>
+					<td>Gaines Wehrle (Director)</td>
+					<td>10/16/2020</td>
+					<td>$230,813.63</td>
+					<td>3,721 акций по <br /><b> 62.03</b>$</td>
+					<td> $62.50</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/56868/000164033420002613/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PGR</b> / Progressive Corp</td>
+					<td>Michael D Sieger (Insider)</td>
+					<td>10/15/2020</td>
+					<td>$275,729.52</td>
+					<td>2,868 акций по <br /><b> 96.14</b>$</td>
+					<td> $95.78</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/80661/000112760220027131/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PGNY</b> / Progyny, Inc.</td>
+					<td>Group Holdings (Sbs) Advis Tpg (Major Shareholder)</td>
+					<td>10/15/2020</td>
+					<td>$1,469,683.65</td>
+					<td>52,545 акций по <br /><b> 27.97</b>$</td>
+					<td> $27.57</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/860866/000138713120009074/xslF345X03/pgny-form4_101520.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$DGX</b> / Quest Diagnostics Inc</td>
+					<td>Stephen H Rusckowski (CEO)</td>
+					<td>10/16/2020</td>
+					<td>$35,039,640.00</td>
+					<td>291,997 акций по <br /><b> 120.00</b>$</td>
+					<td> $120.83</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1022079/000102207920000175/xslF345X03/wf-form4_160313862410575.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$RMD</b> / ResMed Inc.</td>
+					<td>Robert Andrew Douglas (COO)</td>
+					<td>10/15/2020</td>
+					<td>$198,810.00</td>
+					<td>1,125 акций по <br /><b> 176.72</b>$</td>
+					<td> $179.41</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/943819/000112760220027196/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$RMD</b> / ResMed Inc.</td>
+					<td>Brett Sandercock (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$441,800.00</td>
+					<td>2,500 акций по <br /><b> 176.72</b>$</td>
+					<td> $179.41</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/943819/000112760220027222/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$RNG</b> / RingCentral, Inc.</td>
+					<td>Praful Shah (Insider)</td>
+					<td>10/16/2020</td>
+					<td>$3,392,555.66</td>
+					<td>12,259 акций по <br /><b> 276.74</b>$</td>
+					<td> $282.87</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1384905/000120919120055339/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$SAIL</b> / Sailpoint Technologies Holdings Inc</td>
+					<td>Mark D Mcclain (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$900,400.00</td>
+					<td>20,000 акций по <br /><b> 45.02</b>$</td>
+					<td> $46.11</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1627857/000120919120055289/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CRM</b> / salesforce.com, inc.</td>
+					<td>Marc Benioff (CEO)</td>
+					<td>10/16/2020</td>
+					<td>$3,894,150.00</td>
+					<td>15,000 акций по <br /><b> 259.61</b>$</td>
+					<td> $255.01</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1108524/000112760220027237/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$CRM</b> / salesforce.com, inc.</td>
+					<td>Marc Benioff (CEO)</td>
+					<td>10/19/2020</td>
+					<td>$3,864,900.00</td>
+					<td>15,000 акций по <br /><b> 257.66</b>$</td>
+					<td> $255.01</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1108524/000112760220027237/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$NOW</b> / ServiceNow Inc</td>
+					<td>Frederic B Luddy (Director)</td>
+					<td>10/15/2020</td>
+					<td>$14,739,868.00</td>
+					<td>28,600 акций по <br /><b> 515.38</b>$</td>
+					<td> $521.95</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1259158/000137371520000250/xslF345X03/wf-form4_160314173758912.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$SHAK</b> / Shake Shack Inc</td>
+					<td>Randall J Garutti (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$3,162,150.00</td>
+					<td>45,000 акций по <br /><b> 70.27</b>$</td>
+					<td> $70.38</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1620533/000162053320000092/xslF345X03/wf-form4_160314570494093.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$WORK</b> / Slack Technologies, Inc.</td>
+					<td>Cal Henderson (CTO)</td>
+					<td>10/16/2020</td>
+					<td>$49,005.00</td>
+					<td>1,500 акций по <br /><b> 32.67</b>$</td>
+					<td> $32.25</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1764925/000176492520000610/xslF345X03/wf-form4_160314118689016.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$SNAP</b> / Snap Inc.</td>
+					<td>Derek Andersen (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$164,518.10</td>
+					<td>6,082 акций по <br /><b> 27.05</b>$</td>
+					<td> $28.66</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1564408/000120919120055344/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$SFIX</b> / Stitch Fix Inc</td>
+					<td>Mike C Smith (COO)</td>
+					<td>10/15/2020</td>
+					<td>$1,290,000.00</td>
+					<td>40,000 акций по <br /><b> 32.25</b>$</td>
+					<td> $33.67</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1576942/000157694220000093/xslF345X03/wf-form4_160314256637728.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$SNX</b> / SYNNEX Co.</td>
+					<td>Kevin M Murai (Director)</td>
+					<td>10/15/2020</td>
+					<td>$665,252.00</td>
+					<td>4,600 акций по <br /><b> 144.62</b>$</td>
+					<td> $148.91</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1177394/000112760220027113/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$SYRS</b> / Syros Pharmaceuticals, Inc.</td>
+					<td>Richard A Young (Director)</td>
+					<td>10/19/2020</td>
+					<td>$49,638.75</td>
+					<td>5,673 акций по <br /><b> 8.75</b>$</td>
+					<td> $8.44</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1490283/000120919120055334/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$PNTG</b> / The Pennant Group, Inc.</td>
+					<td>Joanne Stringfield (Director)</td>
+					<td>10/16/2020</td>
+					<td>$3,712.60</td>
+					<td>95 акций по <br /><b> 39.08</b>$</td>
+					<td> $38.04</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1766400/000176640020000120/xslF345X03/wf-form4_160314784540000.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TMQ</b> / Trilogy Metals Inc</td>
+					<td>Elaine Sanders (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$177,000.00</td>
+					<td>100,000 акций по <br /><b> 1.77</b>$</td>
+					<td> $1.70</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1543418/000156761920017951/xslF345X03/doc1.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TRUP</b> / Trupanion Inc</td>
+					<td>Margaret Tooth (CRO)</td>
+					<td>10/15/2020</td>
+					<td>$18,122.00</td>
+					<td>200 акций по <br /><b> 90.61</b>$</td>
+					<td> $93.30</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1371285/000137128520000254/xslF345X03/wf-form4_160314587083682.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TRUP</b> / Trupanion Inc</td>
+					<td>Darryl Rawlings (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$369,960.00</td>
+					<td>4,000 акций по <br /><b> 92.49</b>$</td>
+					<td> $93.30</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1371285/000137128520000253/xslF345X03/wf-form4_160314585524991.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TRUP</b> / Trupanion Inc</td>
+					<td>Tricia Plouf (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$27,183.00</td>
+					<td>300 акций по <br /><b> 90.61</b>$</td>
+					<td> $93.30</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1371285/000137128520000252/xslF345X03/wf-form4_160314583808725.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TRUP</b> / Trupanion Inc</td>
+					<td>Asher Bearman (Insider)</td>
+					<td>10/15/2020</td>
+					<td>$36,244.00</td>
+					<td>400 акций по <br /><b> 90.61</b>$</td>
+					<td> $93.30</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1371285/000137128520000251/xslF345X03/wf-form4_160314581829613.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TWLO</b> / Twilio Inc</td>
+					<td>Karyn Smith (General Counsel)</td>
+					<td>10/15/2020</td>
+					<td>$876,456.00</td>
+					<td>2,800 акций по <br /><b> 313.02</b>$</td>
+					<td> $329.59</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1447669/000144766920000196/xslF345X03/wf-form4_160314597755913.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TWLO</b> / Twilio Inc</td>
+					<td>Richard L. Dalzell (Director)</td>
+					<td>10/15/2020</td>
+					<td>$469,530.00</td>
+					<td>1,500 акций по <br /><b> 313.02</b>$</td>
+					<td> $329.59</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1184753/000144766920000194/xslF345X03/wf-form4_160314572946370.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$TYME</b> / Tyme Technologies Inc</td>
+					<td>Michael Demurjian (Major Shareholder)</td>
+					<td>10/16/2020</td>
+					<td>$20,400.00</td>
+					<td>20,000 акций по <br /><b> 1.02</b>$</td>
+					<td> $1.00</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1537917/000171246720000047/xslF345X03/primary_doc.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$W</b> / Wayfair Inc</td>
+					<td>Steve Oblak (Insider)</td>
+					<td>10/16/2020</td>
+					<td>$396,913.23</td>
+					<td>1,323 акций по <br /><b> 300.01</b>$</td>
+					<td> $299.95</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1616707/000161670720000207/xslF345X03/wf-form4_160315316045368.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$W</b> / Wayfair Inc</td>
+					<td>Steve Oblak (Insider)</td>
+					<td>10/19/2020</td>
+					<td>$251,909.75</td>
+					<td>839 акций по <br /><b> 300.25</b>$</td>
+					<td> $299.95</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1616707/000161670720000209/xslF345X03/wf-form4_160315338427541.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$W</b> / Wayfair Inc</td>
+					<td>Michael D Fleisher (CFO)</td>
+					<td>10/16/2020</td>
+					<td>$1,817,659.89</td>
+					<td>6,051 акций по <br /><b> 300.39</b>$</td>
+					<td> $299.95</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1187596/000161670720000205/xslF345X03/wf-form4_160315294815614.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$WSM</b> / Williams-Sonoma, Inc.</td>
+					<td>Laura Alber (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$3,637,550.00</td>
+					<td>35,000 акций по <br /><b> 103.93</b>$</td>
+					<td> $104.97</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/719955/000112760220027235/xslF345X03/form4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$WDAY</b> / Workday Inc</td>
+					<td>Richard Harry Sauer (EVP)</td>
+					<td>10/15/2020</td>
+					<td>$1,075,888.10</td>
+					<td>4,802 акций по <br /><b> 224.05</b>$</td>
+					<td> $227.64</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1327811/000132781120000160/xslF345X03/wf-form4_160314158567784.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$WDAY</b> / Workday Inc</td>
+					<td>Aneel Bhusri (CEO)</td>
+					<td>10/15/2020</td>
+					<td>$1,707,611.05</td>
+					<td>7,585 акций по <br /><b> 225.13</b>$</td>
+					<td> $227.64</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1327811/000132781120000156/xslF345X03/wf-form4_160314121967797.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$WDAY</b> / Workday Inc</td>
+					<td>Robynne Sisco (CFO)</td>
+					<td>10/15/2020</td>
+					<td>$1,169,628.08</td>
+					<td>5,158 акций по <br /><b> 226.76</b>$</td>
+					<td> $227.64</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1327811/000132781120000158/xslF345X03/wf-form4_160314144927437.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$WDAY</b> / Workday Inc</td>
+					<td>James Bozzini (COO)</td>
+					<td>10/15/2020</td>
+					<td>$1,173,292.00</td>
+					<td>5,210 акций по <br /><b> 225.20</b>$</td>
+					<td> $227.64</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1327811/000132781120000157/xslF345X03/wf-form4_160314130947212.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$WKHS</b> / Workhorse Group Inc</td>
+					<td>Raymond Joseph Chess (Director)</td>
+					<td>10/15/2020</td>
+					<td>$89,560.00</td>
+					<td>4,000 акций по <br /><b> 22.39</b>$</td>
+					<td> $22.23</td>
+					<td><a
+							href="http://www.sec.gov/Archives/edgar/data/1425287/000162828020014564/xslF345X03/wf-form4_160314125826660.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$WOR</b> / Worthington Industries, Inc.</td>
+					<td>Catherine M Lyttle (SVP)</td>
+					<td>10/15/2020</td>
+					<td>$164,395.00</td>
+					<td>3,500 акций по <br /><b> 46.97</b>$</td>
+					<td> $49.52</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/108516/000120919120055225/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$YMAB</b> / Y-mAbs Therapeutics, Inc</td>
+					<td>Thomas Gad (Chairman)</td>
+					<td>10/15/2020</td>
+					<td>$156,600.00</td>
+					<td>4,000 акций по <br /><b> 39.15</b>$</td>
+					<td> $39.35</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1722964/000110465920116073/xslF345X03/a4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+				<tr class="border_bottom">
+					<td><b>$ZNGA</b> / Zynga Inc.</td>
+					<td>James Gerard Griffin (CFO)</td>
+					<td>10/16/2020</td>
+					<td>$488,267.00</td>
+					<td>52,900 акций по <br /><b> 9.23</b>$</td>
+					<td> $8.99</td>
+					<td><a href="http://www.sec.gov/Archives/edgar/data/1439404/000120919120055302/xslF345X03/doc4.xml"><img
+								src="report.svg" alt="report" width="23" /></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
